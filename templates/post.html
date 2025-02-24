@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>文章列表 / Post List</title>
+</head>
+<body>
+    <h1>所有文章 / All Posts</h1>
+    <ul>
+    {% for post in posts %}
+        <li>{{ post.title }} - {{ post.created_at.strftime('%Y-%m-%d %H:%M:%S') }}</li>
+    {% endfor %}
+    </ul>
+    <a href="{{ url_for('index') }}">返回首页 / Back to Home</a>
+</body>
+</html>

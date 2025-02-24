@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>创建文章 / Create Post</title>
+</head>
+<body>
+    <h1>写一篇新文章 / Write a New Post</h1>
+    <form method="POST">
+        <label>标题 / Title:</label><br>
+        <input type="text" name="title"><br>
+        <label>内容 / Content:</label><br>
+        <textarea name="content"></textarea><br>
+        <input type="submit" value="发布 / Publish">
+    </form>
+    <a href="{{ url_for('index') }}">返回首页 / Back to Home</a>
+</body>
+</html>
